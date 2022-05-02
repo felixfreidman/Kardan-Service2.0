@@ -25,9 +25,9 @@ html(lang="en")
                 .header-navigation 
                     a(href="#services") Услуги
                     a(href="#shop") Магазин
-                    a(href="./contacts") Контакты 
+                    a(href="#contacts") Контакты 
 
-        main.main
+        main.main#toMain
             .main--greeting
                 .swiper.swiper-greeting#greetingSwiper
                     .swiper-wrapper 
@@ -55,17 +55,99 @@ html(lang="en")
                     .swiper-navigation 
                         .swiper-button-prev 
                         .swiper-button-next
-            .main--kardan.kardan-parent
+            .main--kardan.kardan-parent#services
                 .image-container 
                     img(src="./assets/images/content/repair-main.jpg", alt="")
                     .kardan-parent__badge-icon 
                         img(src="./assets/images/content/badge.png", alt="")
                 .content-container
-                    .kardan-parent__title 
-                    .kardan-parent__subtitle 
-                    .kardan-parent__content 
-                    .kardan-parent__button
-                    
-        script(src="./assets/js/jquery.min.js") 
+                    .kardan-parent__title /Почему мы?
+                    .kardan-parent__subtitle Специалисты своего дела
+                    .kardan-parent__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Ipsum consequat nisl vel pretium lectus quam id leo in. 
+                    .kardan-parent__button Узнать больше
+            .main--benefits.benefits-parent 
+                .content-container 
+                    .benefits-parent__title /Почему мы?
+                    .benefits-parent__subtitle Специалисты своего дела
+                    .benefits-parent__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    .benefits-parent__list 
+                        .benefits-parent__item 
+                            .benefits-parent__counter 1
+                            .benefits-parent__value Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        .benefits-parent__item 
+                            .benefits-parent__counter 2
+                            .benefits-parent__value Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        .benefits-parent__item 
+                            .benefits-parent__counter 3
+                            .benefits-parent__value Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .images-container 
+                    .image-container.image-container--first
+                    .image-container.image-container--second
+            .main--form.form-parent 
+                form.form-container
+                    .container 
+                        .form-parent__title Оставьте заявку сейчас
+                        .form-parent__subtitle  Lorem ipsum dolor sit amet
+                    .form-apply
+                        label(for="userName").form-parent__label Имя
+                            input(type="text").form-parent__input 
+                        label(for="userName").form-parent__label Телефон
+                            input(type="text").form-parent__input 
+                        button(type="submit").form-parent__button Оставить
+            .main--navigation.navigation-parent 
+                .navigation-parent__title /Что мы предлагаем?
+                .navigation-parent__subtitle Специалисты своего дела
+                .navigation-parent__container 
+                    .navigation-parent__image 
+                        img(src="./assets/images/content/main_bg.jpg", alt="")
+                    .navigation-parent__service
+                        .navigation-parent__counter 01
+                        .navigation-parent__description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        a(href="/turbo/").navigation-parent__more 
+                    .navigation-parent__image 
+                        img(src="./assets/images/content/main_bg2.jpg", alt="")
+                    .navigation-parent__service 
+                        .navigation-parent__counter 02
+                        .navigation-parent__description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        a(href="/turbo/").navigation-parent__more 
+                    .navigation-parent__image 
+                        img(src="./assets/images/content/main_bg3.jpg", alt="")
+                    .navigation-parent__service        
+                        .navigation-parent__counter 03
+                        .navigation-parent__description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        a(href="/turbo/").navigation-parent__more  
+            .main--shop.shop-parent#shop 
+                .shop-parent__title /Что мы предлагаем?
+                .shop-parent__subtitle Специалисты своего дела
+                .container 
+                    .shop-image.shop-image--kardan  
+                    .shop-image.shop-image--turbo 
+            .map-container#contacts 
+                .map
+        footer.footer#toFooter 
+            .footer-row.footer-row--expanded 
+                .logo-container
+                    a(href="#toMain") 
+                        img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
+                    span.logo-caption Кардан-Сервис
+                .mobile-container.mobile-container--second-to-column
+                    .navigation
+                        a.navigation-link(href="#services") Услуги
+                        a.navigation-link(href="#shop") Магазин
+                        a.navigation-link(href="#contacts") Контакты
+                    .mobile-container.mobile-container--first-to-column
+                        .contacts 
+                            a(href="tel:+74951864203") +7 (495) 186-42-03 
+                            .address ул. Сурнова, 22/7
+                        .apply Оставить заявку
+            .footer-row 
+                .company-info
+                    span.company-name ©2019–2022 Кардан Сервис
+                    span.company-privacy Политика конфиденциальности
+                .developer-info Сделано в Freidman Solutions
+        
+        script(src="./assets/js/jquery.min.js")
+        script(src="https://api-maps.yandex.ru/2.1/?apikey=db32f154-f5b8-442a-bb04-5f55f07bbae7&lang=ru_RU", type="text/javascript") 
         script(src="./assets/js/plugins.min.js") 
         script(src="./assets/js/main.min.js") 
+        
