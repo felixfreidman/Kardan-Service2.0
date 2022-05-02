@@ -906,7 +906,14 @@ body::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: $main;
+
+        // background-color: $main;
+        .row {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            height: 100%;
+        }
 
         &__title {
             color: $primary;
@@ -919,11 +926,24 @@ body::-webkit-scrollbar {
             font-size: 36px;
             line-height: 42px;
             margin-bottom: 20px;
-            color: #fff;
+            // color: #fff;
+            color: $main;
+        }
+
+        .content-container {
+            width: 40%;
+            margin-left: 20px;
+            margin-top: 30px;
+
+            .description {
+                font-size: 22px;
+                color: #212021;
+                line-height: 26px;
+            }
         }
 
         .container {
-            width: 80%;
+            width: 60%;
             display: flex;
             justify-content: space-between;
             height: 100%;
