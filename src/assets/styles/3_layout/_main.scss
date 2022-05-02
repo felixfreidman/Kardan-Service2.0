@@ -897,9 +897,9 @@ body::-webkit-scrollbar {
     }
 
     &--shop {
-        padding: 60px 120px;
-        width: calc(100% - 240px);
-        height: 400px;
+        padding: 0px 0px;
+        width: calc(100% - 0px);
+        height: 250px;
     }
 
     .shop-parent {
@@ -925,32 +925,30 @@ body::-webkit-scrollbar {
         &__subtitle {
             font-size: 36px;
             line-height: 42px;
-            margin-bottom: 20px;
             // color: #fff;
             color: $main;
         }
 
-        .content-container {
-            width: 40%;
-            margin-left: 20px;
-            margin-top: 30px;
+        // .content-container {
+        //     width: 40%;
+        //     margin-left: 20px;
+        //     margin-top: 30px;
 
-            .description {
-                font-size: 22px;
-                color: #212021;
-                line-height: 26px;
-            }
-        }
+        //     .description {
+        //         font-size: 22px;
+        //         color: #212021;
+        //         line-height: 26px;
+        //     }
+        // }
 
         .container {
-            width: 60%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             height: 100%;
-            margin-top: 30px;
 
             .shop-image {
-                width: 49%;
+                width: 50%;
                 height: 100%;
                 background-size: cover;
                 background-position: center;
