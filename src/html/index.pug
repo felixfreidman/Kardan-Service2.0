@@ -8,6 +8,25 @@ html(lang="en")
         link(rel="shortcut icon", href="./assets/images/content/logo_custom.svg", type="image/x-icon")
         title Кардан-сервис: главная страница
     body 
+        header.header 
+            .header-row.header-row--fixed 
+                .header-logo 
+                    img(src="./assets/images/content/logo_custom.svg", alt="")
+                .header-caption Кардан-сервис
+                .header-address 
+                    .address-logo 
+                        img(src="./assets/images/content/mapMarker.svg", alt="")
+                    .address-value ул. Сурнова, 22/7
+                .header-phone 
+                    .phone-logo 
+                        img(src="./assets/images/content/phoneCall.svg", alt="")
+                    a(href="").phone-value +7 (3952) 66-22-42 
+            .header-row.header-row--static 
+                .header-navigation 
+                    a(href="#services") Услуги
+                    a(href="#shop") Магазин
+                    a(href="./contacts") Контакты 
+
         main.main
             .main--greeting
                 .swiper.swiper-greeting#greetingSwiper
@@ -32,3 +51,21 @@ html(lang="en")
                                 .header Наш интернет-магазин
                                 .subheader Узнайте, какие услуги актуальные и сколько они стоят
                                 .apply-btn Перейти
+                    .swiper-pagination 
+                    .swiper-navigation 
+                        .swiper-button-prev 
+                        .swiper-button-next
+            .main--kardan.kardan-parent
+                .image-container 
+                    img(src="./assets/images/content/repair-main.jpg", alt="")
+                    .kardan-parent__badge-icon 
+                        img(src="./assets/images/content/badge.png", alt="")
+                .content-container
+                    .kardan-parent__title 
+                    .kardan-parent__subtitle 
+                    .kardan-parent__content 
+                    .kardan-parent__button
+                    
+        script(src="./assets/js/jquery.min.js") 
+        script(src="./assets/js/plugins.min.js") 
+        script(src="./assets/js/main.min.js") 
