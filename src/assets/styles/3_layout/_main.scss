@@ -446,11 +446,11 @@ body::-webkit-scrollbar {
                     }
 
                     &:hover {
-                        border: 3px solid $primary;
+                        border: 3px solid #F99F38;
 
                         &::after {
-                            border-top: 3px solid $primary;
-                            border-left: 3px solid $primary;
+                            border-top: 3px solid #F99F38;
+                            border-left: 3px solid #F99F38;
                         }
                     }
                 }
@@ -485,11 +485,11 @@ body::-webkit-scrollbar {
                     }
 
                     &:hover {
-                        border: 3px solid $primary;
+                        border: 3px solid #F99F38;
 
                         &::after {
-                            border-top: 3px solid $primary;
-                            border-right: 3px solid $primary;
+                            border-top: 3px solid #F99F38;
+                            border-right: 3px solid #F99F38;
                         }
                     }
                 }
@@ -549,7 +549,7 @@ body::-webkit-scrollbar {
         }
 
         &__title {
-            color: $primary;
+            color: #F99F38;
             font-size: 18px;
             line-height: 16px;
             margin-bottom: 20px;
@@ -630,7 +630,7 @@ body::-webkit-scrollbar {
         }
 
         &__title {
-            color: $primary;
+            color: #F99F38;
             font-size: 18px;
             line-height: 16px;
             margin-bottom: 20px;
@@ -703,7 +703,7 @@ body::-webkit-scrollbar {
             padding: 40px 30px;
             display: flex;
             align-items: center;
-            background-color: $primary;
+            background-color: #F99F38;
 
             .container {
                 display: flex;
@@ -788,7 +788,7 @@ body::-webkit-scrollbar {
         background-color: $main;
 
         &__title {
-            color: $primary;
+            color: #F99F38;
             font-size: 18px;
             line-height: 16px;
             margin-bottom: 20px;
@@ -916,7 +916,7 @@ body::-webkit-scrollbar {
         }
 
         &__title {
-            color: $primary;
+            color: #F99F38;
             font-size: 18px;
             line-height: 16px;
             margin-bottom: 20px;
