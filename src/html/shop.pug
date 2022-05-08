@@ -43,7 +43,9 @@ html(lang="en")
                                 .container-card__name Кардан
                                 .container-card__price 5 800 ₽
                             .container-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            .container-card__button Добавить в корзину
+                            .container-card__row
+                                .container-card__button.modal-button Быстрый заказ
+                                .container-card__button Добавить в корзину
                     .container-card 
                         img(src="./assets/images/content/main_bg.jpg", alt="")
                         .container-card__container
@@ -52,7 +54,9 @@ html(lang="en")
                                 .container-card__price 5 800 ₽
                             
                             .container-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            .container-card__button Добавить в корзину
+                            .container-card__row
+                                .container-card__button.modal-button Быстрый заказ
+                                .container-card__button Добавить в корзину
                     .container-card 
                         img(src="./assets/images/content/main_bg.jpg", alt="")
                         .container-card__container
@@ -61,7 +65,9 @@ html(lang="en")
                                 .container-card__price 5 800 ₽
                             
                             .container-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            .container-card__button Добавить в корзину
+                            .container-card__row
+                                .container-card__button.modal-button Быстрый заказ
+                                .container-card__button Добавить в корзину
                     .container-card 
                         img(src="./assets/images/content/main_bg.jpg", alt="")
                         .container-card__container
@@ -70,7 +76,9 @@ html(lang="en")
                                 .container-card__price 5 800 ₽
                             
                             .container-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            .container-card__button Добавить в корзину
+                            .container-card__row
+                                .container-card__button.modal-button Быстрый заказ
+                                .container-card__button Добавить в корзину
                     
             footer.footer#toFooter 
                 .footer-row.footer-row--expanded 
@@ -93,5 +101,19 @@ html(lang="en")
                         span.company-name ©2019–2022 Кардан Сервис
                         span.company-privacy Политика конфиденциальности
                     .developer-info Сделано в Freidman Solutions
+            .dark-layer.js--hidden
+                .form.apply-form#applyForm 
+                    .form-close#closeForm
+                        span.cross-one 
+                        span.cross-two
+                    .form-header Оформление заказа
+                    .form-subheader Для заказа потребуются ваши данные
+                    label(for="userName") ФИО
+                        input.form-input#userName(type="text", name="userName", placeholder="ФИО")
+                    label(for="userPhone") Ваш телефон
+                            input.form-input#userPhone(type="text", name="userName" ,placeholder="Телефон", data-inputmask="'mask' : '+7(999) 999-99-99'", inputmode="text")
+                    button.form-button(type="submit") Заказать
+                    .form-caption Нажимая кнопку «Заказать», вы принимаете пользовательское соглашение
+        script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js")   

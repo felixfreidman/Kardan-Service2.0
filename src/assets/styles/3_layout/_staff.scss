@@ -116,8 +116,7 @@ body {
 
 
             .container-card {
-                width: calc(25% - 64px);
-                padding: 20px;
+                width: calc(25% - 24px);
                 margin-right: 24px;
                 max-height: 342px;
                 height: 342px;
@@ -130,7 +129,7 @@ body {
 
                 &:nth-child(4) {
                     margin-right: 0;
-                    width: calc(25% - 40px);
+                    width: calc(25% - 0px);
                 }
 
                 img {
@@ -143,8 +142,8 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: start;
-                    padding: 20px;
-                    width: calc(100% - 40px);
+                    padding: 10px;
+                    width: calc(100% - 20px);
                     background-color: #fff;
                     border-radius: 0 0 16px 16px;
                 }
@@ -153,6 +152,7 @@ body {
                 &__row {
                     display: flex;
                     align-items: start;
+                    justify-content: space-between;
                     width: 100%;
                     margin-bottom: 10px;
                 }
@@ -182,15 +182,276 @@ body {
                     color: #fff;
                     background-color: #d72024;
                     padding: 10px 0;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 500;
-                    width: 100%;
+                    width: 48%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     cursor: pointer;
                 }
+
+                .modal-button {
+                    background-color: #ff8000 !important;
+                    text-shadow: 1px 1px 2px #212121;
+                }
             }
         }
     }
+}
+
+
+.js--hidden {
+    display: none !important;
+}
+
+.disable-body {
+    overflow: hidden;
+}
+
+
+.dark-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000, $alpha: 0.5);
+}
+
+.apply-form {
+    max-width: 512px;
+    max-height: 686px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+    padding: 60px;
+
+    .form-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 22.75px;
+        height: 22.75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .cross-one,
+        .cross-two {
+            display: block;
+            background-color: #c2c2c2;
+            width: 22.75px;
+            height: 2px;
+        }
+
+        .cross-one {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+
+        .cross-two {
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .form-header {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #000;
+        margin-bottom: 13px;
+    }
+
+    .form-subheader {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 32px;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        label {
+            width: 48%;
+        }
+    }
+
+    label {
+        width: 100%;
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $main;
+    }
+
+    .form-input {
+        width: calc(100% - 40px);
+        padding: 20px;
+        margin-top: 10px;
+        height: 18px;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #d72024;
+        margin-bottom: 24px;
+        position: relative;
+        outline: none;
+
+        &::placeholder {
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #d720236d;
+
+        }
+
+        &:focus {
+            border: 1px solid #d72024;
+        }
+
+        &--warning {
+            border: 1px solid #cc0000;
+            color: #f00;
+        }
+    }
+
+    .form-caption {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #4D4D52;
+    }
+}
+
+.applied-screen {
+    max-width: 446px;
+    max-height: 686px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 48px;
+    background: #eaf2fc;
+    box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+
+    .form-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 22.75px;
+        height: 22.75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .cross-one,
+        .cross-two {
+            display: block;
+            background-color: #c2c2c2;
+            width: 22.75px;
+            height: 2px;
+        }
+
+        .cross-one {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+
+        .cross-two {
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .applied-icon {
+        margin-bottom: 24px;
+        width: 72px;
+        height: 72px;
+    }
+
+    .applied-header {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 12px;
+    }
+
+    .applied-subheader {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.form-button {
+    background: #d72024;
+    border-radius: 12px;
+    margin-top: 8px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #d72024;
+    }
+
+    &:active {
+        background: #d72024;
+    }
+
+}
+
+// =================== FORM SECTION
+// TEMPLATE STYLES SECTION ===================
+.empty--input::after {
+    content: "Поле обязательно";
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: #f00;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    display: block;
 }
