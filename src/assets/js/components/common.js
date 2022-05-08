@@ -23,10 +23,13 @@
 // AOS.init();
 
 const darkLayer = document.querySelector(".dark-layer");
-const applyBtns = document.querySelector(".modal-button");
+const applyBtns = document.querySelectorAll(".modal-button");
 const closeForm = document.getElementById("closeForm");
-applyBtns.addEventListener("click", () => {
-    darkLayer.classList.toggle("js--hidden");
+
+applyBtns.forEach(button => {
+    button.addEventListener("click", () => {
+        darkLayer.classList.toggle("js--hidden");
+    });
 });
 
 

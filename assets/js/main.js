@@ -20,10 +20,12 @@
 // }
 // AOS.init();
 var darkLayer = document.querySelector(".dark-layer");
-var applyBtns = document.querySelector(".modal-button");
+var applyBtns = document.querySelectorAll(".modal-button");
 var closeForm = document.getElementById("closeForm");
-applyBtns.addEventListener("click", function () {
-  darkLayer.classList.toggle("js--hidden");
+applyBtns.forEach(function (button) {
+  button.addEventListener("click", function () {
+    darkLayer.classList.toggle("js--hidden");
+  });
 });
 closeForm.addEventListener("click", function () {
   darkLayer.classList.toggle("js--hidden");
