@@ -1,0 +1,97 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="./assets/images/content/favicon.png", type="image/x-icon")
+        link(rel="stylesheet", href="./style.min.css")
+        title Бронирование
+    body
+        header.header 
+            .header-row.header-row--fixed 
+                .header-logo 
+                    img(src="./assets/images/content/logo_custom.svg", alt="")
+                .header-caption Кардан-сервис
+                .header-address 
+                    .address-logo 
+                        img(src="./assets/images/content/mapMarker.svg", alt="")
+                    .address-value ул. Сурнова, 22/7
+                .header-phone 
+                    .phone-logo 
+                        img(src="./assets/images/content/phoneCall.svg", alt="")
+                    a(href="").phone-value +7 (3952) 66-22-42 
+            .header-row.header-row--static 
+                .header-navigation 
+                    a(href="#services") Услуги
+                    a(href="#shop") Магазин
+                    a(href="#contacts") Контакты 
+        main.main.main-book
+            .header-container
+                .header Бронирование
+                .header-bar
+            form.form-book
+                .contact-section 
+                    .section-header Контактные данные
+                    label(for="userName").form-label.form-label--big ФИО
+                        input#userName(type="text", name="userName", placeholder="Ваше имя").form-input
+                    .section-row
+                        label(for="userPhone").form-label.form-label--small  Телефон
+                            input#userPhone(type="text", name="userPhone", placeholder="Ваш телефон").form-input
+                        label(for="userEmail").form-label.form-label--small E-mail
+                            input#userEmail(type="text", name="userEmail", placeholder="Ваша почта").form-input
+                .book-section
+                    .section-header Ваше Бронирование
+                    .order-list
+                        .order-item
+                            .order-item__name#orderPlaceName 
+                                | Услуга 1
+                            .order-item__bar 
+                            .order-item__price#orderPlacePrice  
+                                | 2 990 
+                                span ₽
+                        .order-item
+                            .order-item__name#orderServiceName Услуга 2
+                            .order-item__bar 
+                            .order-item__price#orderServicePrice  
+                                | 990 
+                                span ₽
+                    .order-total 
+                        .order-total__name Итого
+                        .order-total__bar 
+                        .order-total__price#orderTotalPrice 
+                            | 990 
+                            span ₽ 
+                    button(type="submit").order-button Подтвердить
+            .orders-container 
+                .section-header Формирование заказа
+                .order-container.order-place
+                    .order-row
+                        .order-info
+                            .order-header Услуга 1
+                            .order-cost 10.000 ₽
+                    .order-content
+                        .content-header Описание
+                            .content-description Описание
+            footer.footer#toFooter 
+                .footer-row.footer-row--expanded 
+                    .logo-container
+                        a(href="#toMain") 
+                            img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
+                        span.logo-caption Кардан-Сервис
+                    .mobile-container.mobile-container--second-to-column
+                        .navigation
+                            a.navigation-link(href="#services") Услуги
+                            a.navigation-link(href="#shop") Магазин
+                            a.navigation-link(href="#contacts") Контакты
+                        .mobile-container.mobile-container--first-to-column
+                            .contacts 
+                                a(href="tel:+74951864203") +7 (495) 186-42-03 
+                                .address ул. Сурнова, 22/7
+                            .apply Оставить заявку
+                .footer-row 
+                    .company-info
+                        span.company-name ©2019–2022 Кардан Сервис
+                        span.company-privacy Политика конфиденциальности
+                    .developer-info Сделано в Freidman Solutions
+
+        script(src="./assets/js/main.min.js")

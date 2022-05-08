@@ -1,0 +1,90 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="./assets/images/content/logo_custom.svg", type="image/x-icon")
+        link(rel="stylesheet", href="./style.min.css")
+        title Магазин карданов
+    body.staff-body 
+        header.header 
+            .header-row.header-row--fixed 
+                .header-logo 
+                    img(src="./assets/images/content/logo_custom.svg", alt="")
+                .header-caption Кардан-сервис
+                .header-address 
+                    .address-logo 
+                        img(src="./assets/images/content/mapMarker.svg", alt="")
+                    .address-value ул. Сурнова, 22/7
+                .header-phone 
+                    .phone-logo 
+                        img(src="./assets/images/content/phoneCall.svg", alt="")
+                    a(href="").phone-value +7 (3952) 66-22-42 
+            .header-row.header-row--static 
+                .header-navigation 
+                    a(href="#services") Услуги
+                    a(href="#shop") Магазин
+                    a(href="#contacts") Контакты 
+        main.main.main-staff
+            .breadcrumbs Главная / Товары 
+            .header-container
+                .header 
+                    | Онлайн-магазин
+                .header-bar
+            .section 
+                .section__header-container 
+                    .header Карданы
+                    //- .amount 2 товара
+                .staff-container
+                    .container-card 
+                        img(src="./assets/images/content/main_bg.jpg", alt="")
+                        .container-card__container
+                            .container-card__row
+                                .container-card__name Кардан
+                                .container-card__price 5 800 ₽
+                            .container-card__button Добавить в корзину
+                    .container-card 
+                        img(src="./assets/images/content/main_bg.jpg", alt="")
+                        .container-card__container
+                            .container-card__row
+                                .container-card__name Кардан
+                                .container-card__price 5 800 ₽
+                            .container-card__button Добавить в корзину
+                    .container-card 
+                        img(src="./assets/images/content/main_bg.jpg", alt="")
+                        .container-card__container
+                            .container-card__row
+                                .container-card__name Кардан
+                                .container-card__price 5 800 ₽
+                            .container-card__button Добавить в корзину
+                    .container-card 
+                        img(src="./assets/images/content/main_bg.jpg", alt="")
+                        .container-card__container
+                            .container-card__row
+                                .container-card__name Кардан
+                                .container-card__price 5 800 ₽
+                            .container-card__button Добавить в корзину
+                    
+            footer.footer#toFooter 
+                .footer-row.footer-row--expanded 
+                    .logo-container
+                        a(href="#toMain") 
+                            img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
+                        span.logo-caption Кардан-Сервис
+                    .mobile-container.mobile-container--second-to-column
+                        .navigation
+                            a.navigation-link(href="#services") Услуги
+                            a.navigation-link(href="#shop") Магазин
+                            a.navigation-link(href="#contacts") Контакты
+                        .mobile-container.mobile-container--first-to-column
+                            .contacts 
+                                a(href="tel:+74951864203") +7 (495) 186-42-03 
+                                .address ул. Сурнова, 22/7
+                            .apply Оставить заявку
+                .footer-row 
+                    .company-info
+                        span.company-name ©2019–2022 Кардан Сервис
+                        span.company-privacy Политика конфиденциальности
+                    .developer-info Сделано в Freidman Solutions
+        script(src="./assets/js/plugins.min.js")
+        script(src="./assets/js/main.min.js")   

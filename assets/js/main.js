@@ -17,7 +17,9 @@ function init() {
     iconImageOffset: [-5, -38]
   });
   myMap.geoObjects.add(myPlacemark);
-} // // header-swiper
+}
+
+AOS.init(); // // header-swiper
 // var swiper = new Swiper('#main-swiper', {
 //   fadeEffect: {
 //     crossFade: true
@@ -43,7 +45,6 @@ function init() {
 //   watchVisibility: true,
 //   disableOnInteraction: true,
 // });
-
 
 var greetingSwiper = new Swiper("#greetingSwiper", {
   // Optional parameters

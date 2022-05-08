@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./style.min.css")
         link(rel="shortcut icon", href="./assets/images/content/logo_custom.svg", type="image/x-icon")
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
         title Кардан-сервис: главная страница
     body 
         header.header 
@@ -60,65 +61,73 @@ html(lang="en")
                 .shop-parent__subtitle Интернет-магазин
                 .row
                     .container 
-                        .shop-image.shop-image--kardan  
-                        .shop-image.shop-image--turbo 
+                        .shop-image.shop-image--kardan(data-aos="flip-left")  
+                        .shop-image.shop-image--turbo(data-aos="flip-right") 
             .main--kardan.kardan-parent#services
                 .image-container 
-                    img(src="./assets/images/content/repair-main.jpg", alt="")
+                    img(src="./assets/images/content/repair-main.jpg", alt="",data-aos="flip-up")
                     .kardan-parent__badge-icon 
-                        img(src="./assets/images/content/badge.png", alt="")
+                        img(src="./assets/images/content/badge.svg", alt="",data-aos="flip-down")
                 .content-container
-                    .kardan-parent__title /Почему мы?
-                    .kardan-parent__subtitle Специалисты своего дела
-                    .kardan-parent__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Ipsum consequat nisl vel pretium lectus quam id leo in. 
-                    .kardan-parent__button Узнать больше
+                    //- .kardan-parent__title /Почему мы?
+                    .kardan-parent__subtitle Ремонт карданных валов
+                    .kardan-parent__content Компания ООО «Кардан Сервис» предлагает ремонт карданных валов для всех марок автомобилей, спецтехники и промышленного оборудования. Обращаясь к нам вы можете быть уверены в наивысшем качестве, профессионализме и заводских условиях ремонта
+                    .special-row
+                        .kardan-parent__button Узнать больше
+                        .kardan-parent__button.kardan-parent__button--yellow Отправить заявку
             .main--benefits.benefits-parent 
                 .content-container 
-                    .benefits-parent__title /Почему мы?
-                    .benefits-parent__subtitle Специалисты своего дела
-                    .benefits-parent__content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    //- .benefits-parent__title /Почему мы?
+                    .benefits-parent__subtitle Ремонт турбокомпрессоров
+                    .benefits-parent__content Восстановим ваш турбокомпрессор в заводских условиях с гарантией до двух лет.
                     .benefits-parent__list 
                         .benefits-parent__item 
                             .benefits-parent__counter 1
-                            .benefits-parent__value Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .benefits-parent__value Профессиональная диагностика и настройка турбокомпрессоров на стендах CIMAT
                         .benefits-parent__item 
                             .benefits-parent__counter 2
-                            .benefits-parent__value Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .benefits-parent__value Используем исключительно оригинальные запчасти лучшего качества
                         .benefits-parent__item 
                             .benefits-parent__counter 3
-                            .benefits-parent__value Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            .benefits-parent__value Ремонтируем турбины любых марок автомобилей.
+                    .special-row
+                        .benefits-parent__button Узнать больше
+                        .benefits-parent__button.benefits-parent__button--yellow Отправить заявку
                 .images-container 
-                    .image-container.image-container--first
-                    .image-container.image-container--second
+                    .image-container.image-container--first(data-aos="fade-left")
+                    .image-container.image-container--second(data-aos="fade-right")
+                    .benefits-parent__badge-icon 
+                        img(src="./assets/images/content/badge-turbo.svg", alt="",data-aos="flip-down")
             .main--form.form-parent 
-                form.form-container
+                form.form-container(data-aos="flip-down")
                     .container 
-                        .form-parent__title Оставьте заявку сейчас
-                        .form-parent__subtitle  Lorem ipsum dolor sit amet
+                        .form-parent__title Перезвоним за 2 минуты
+                        .form-parent__subtitle  Наш менеджер готов перезвонить вам в течение 2-ух минут, помочь с подбором или принять в ремонт вашу запчасть
                     .form-apply
-                        label(for="userName").form-parent__label Имя
-                            input(type="text").form-parent__input 
-                        label(for="userName").form-parent__label Телефон
-                            input(type="text").form-parent__input 
+                        .special-row
+                            label(for="userName").form-parent__label Имя
+                                input(type="text").form-parent__input 
+                            label(for="userName").form-parent__label Телефон
+                                input(type="text").form-parent__input 
                         button(type="submit").form-parent__button Оставить
             .main--navigation.navigation-parent 
                 .navigation-parent__title /Что мы предлагаем?
                 .navigation-parent__subtitle Специалисты своего дела
                 .navigation-parent__container 
                     .navigation-parent__image 
-                        img(src="./assets/images/content/main_bg.jpg", alt="")
+                        img(src="./assets/images/content/main_bg.jpg", alt="",data-aos="flip-down")
                     .navigation-parent__service
                         .navigation-parent__counter 01
                         .navigation-parent__description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         a(href="/turbo/").navigation-parent__more 
                     .navigation-parent__image 
-                        img(src="./assets/images/content/main_bg2.jpg", alt="")
+                        img(src="./assets/images/content/main_bg2.jpg", alt="",data-aos="flip-down")
                     .navigation-parent__service 
                         .navigation-parent__counter 02
                         .navigation-parent__description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         a(href="/turbo/").navigation-parent__more 
                     .navigation-parent__image 
-                        img(src="./assets/images/content/main_bg3.jpg", alt="")
+                        img(src="./assets/images/content/main_bg3.jpg", alt="",data-aos="flip-down")
                     .navigation-parent__service        
                         .navigation-parent__counter 03
                         .navigation-parent__description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -151,5 +160,6 @@ html(lang="en")
         script(src="./assets/js/jquery.min.js")
         script(src="https://api-maps.yandex.ru/2.1/?apikey=db32f154-f5b8-442a-bb04-5f55f07bbae7&lang=ru_RU", type="text/javascript") 
         script(src="./assets/js/plugins.min.js") 
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
         script(src="./assets/js/main.min.js") 
         
